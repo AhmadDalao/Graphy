@@ -171,11 +171,19 @@ html {
 
 .testimonial__list {
     list-style: none;
-    width: 0px;
-    margin: 0 auto;
-    padding: 4px;
-    background-color: var(--pink);
+    width: 0;
     position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.testimonial__list::before {
+    content: '';
+    height: 100%;
+    padding: 4px;
+    transform: translateX(-50%);
+    background-color: var( --pink);
+    position: absolute;
 }
 
 .testimonial__list li {
@@ -191,6 +199,7 @@ html {
     background-color: var(--white);
     border-radius: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -201,6 +210,7 @@ html {
     background-color: var(--pink);
     border-radius: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -238,9 +248,8 @@ html {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-top: 3px solid var(--pink);
-    /* min-width: 300px;
-    max-width: 400px; */
     z-index: 2;
+    width: 90%;
 }
 
 .testimonial-card .testimonial__imageH {
@@ -269,6 +278,12 @@ html {
 
 /* ================================= start media section  =================================  */
 
+@media (max-width: 576px) {
+    .testimonial-card {
+        width: 80%;
+    }
+}
+
 @media (min-width: 576px) {
     html {
         font-size: 1.25rem;
@@ -288,7 +303,7 @@ html {
 
 @media (max-width: 991px) {
     .testimonial__list {
-        margin: 0;
+        margin: 0 0 0 0.5rem;
     }
     .testimonial__list li:nth-child(odd) .testimonial-card {
         right: -50px;
@@ -301,10 +316,12 @@ html {
         left: -15px;
         top: 50%;
     }
-    /* .testimonial-card {
-        min-width: 225px;
-        max-width: 250px;
-    } */
+    .testimonial__list li::after {
+        left: 0;
+    }
+    .testimonial__list li::before {
+        left: 0;
+    }
 }
 
 @media (min-width: 992px) {
@@ -316,15 +333,18 @@ html {
         flex: 0 0 31.833333%;
         max-width: 31.833333%;
     }
-    /* .testimonial-card {
-        min-width: 400px;
-        max-width: 550px;
-    } */
-    .testimonial__list li:nth-child(odd) .testimonial-card {
-        right: 450px;
+    .testimonial__list::before {
+        left: 50%;
+        transform: translateX(-50%);
     }
-    .testimonial__list li {
-        padding: 1rem 0;
+    .testimonial-card {
+        width: 35%;
+    }
+    .testimonial__list li:nth-child(odd) .testimonial-card {
+        right: -7%;
+    }
+    .testimonial__list li:nth-child(even) .testimonial-card {
+        left: 58%;
     }
 }
 
