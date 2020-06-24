@@ -26,39 +26,29 @@ body {
 }
 
 .text__line {
-  width: 10%;
+    width: 10%;
     position: relative;
     margin: 0 1rem;
     background-color: #545b628a;
     height: 2px;
+    font-weight: normal;
+}
+
+.text__line::before,
+.text__line::after {
+    content: '';
+    position: absolute;
+    border-top: 2px solid #545b628a;
+    width: 60%;
+    left: 50%;
 }
 
 .text__line::before {
-       content: '';
-    left: 50%;
-    border-top: 2px solid #545b628a;
-    position: absolute;
-    width: 60%;
-    /* top: 50%; */
     bottom: 4px;
     transform: translate(-50%, -100%);
 }
 
 .text__line::after {
-    content: '';
-    left: 50%;
-    border-bottom: 4px solid #545b628a;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-.text__line::after {
-    content: '';
-    left: 50%;
-    border-bottom: 2px solid #545b628a;
-    position: absolute;
-    width: 60%;
     top: 4px;
     transform: translate(-50%, 100%);
 }
