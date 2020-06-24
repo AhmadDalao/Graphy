@@ -24,16 +24,33 @@ body {
     background-color: #eeeeee;
 }
 
+.text__line {
+    width: 10%;
+    position: relative;
+    margin: 0 1rem;
+}
+
+.text__line::before {
+    content: '';
+    left: 50%;
+    border-top: 8px double #545b628a;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .padding-top-bottom {
     padding: 6rem 0;
 }
 
-.services__title,
+.section__title__title,
 .testimonial__title {
     position: relative;
 }
 
-.services__title::before,
+
+/* .services__title::before,
 .testimonial__title::before {
     content: '';
     height: 4px;
@@ -44,7 +61,7 @@ body {
     right: 0;
     bottom: -8px;
     background-color: var(--pink);
-}
+} */
 
 
 /* ================================= navbar  =================================  */
@@ -176,7 +193,7 @@ body {
     position: absolute;
     z-index: 1;
     transition: transform .3s ease;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
 
 .services-image:hover::before {
@@ -296,17 +313,46 @@ body {
 }
 
 
+/* ================================= about me section  =================================  */
+
+.responsive__image-container {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.responsive__image-container img {
+    border-radius: 100%;
+    width: 100%;
+    border: 0;
+    position: relative;
+    box-shadow: 0px 0px 0px 4px var(--white), 0px 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
+
 /* ================================= start media section  =================================  */
 
 @media (max-width: 576px) {
     .testimonial-card {
         width: 80%;
     }
+    .section__title {
+        font-size: 1.25rem;
+    }
 }
 
 @media (min-width: 576px) {
     html {
         font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive__image-container img {
+        max-width: 60%;
+        margin: 0 auto;
+        text-align: center;
     }
 }
 
