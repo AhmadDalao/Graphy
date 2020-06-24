@@ -20,7 +20,7 @@
         <!-- start  navbar -->
         <nav class="navbar navbar-expand-sm navbar-dark  fixed-top bg-transparent " id="myNav">
             <div class="container">
-                <a class=" navbar-brand  " href="index.html">Graphy</a>
+                <a class=" navbar-brand text-uppercase " href="index.html">Graphy</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -84,21 +84,21 @@
                     <div class="services-image " data-place=" Pragser wildsee, italy ">
                         <img class=" img-fluid " src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80 " alt="Landscape ">
                     </div>
-                    <h4 class="p-1 text-center mt-2">Landscape Photography</h4>
+                    <h4 class="service__title p-1 text-center mt-2">Landscape Photography</h4>
                     <p class="p-1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repudiandae ea nihil.</p>
                 </div>
                 <div class="service-item col-sm-12 col-md-6 col-lg-4 shadow-custom  p-0 custom-margin">
                     <div class=" services-image " data-place=" Jack and leen's wedding , US- NYC ">
                         <img class="img-fluid " src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80 " alt="Wedding image ">
                     </div>
-                    <h4 class="p-1 text-center mt-2">Wedding Photography</h4>
+                    <h4 class="service__title p-1 text-center mt-2">Wedding Photography</h4>
                     <p class="p-1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repudiandae ea nihil.</p>
                 </div>
                 <div class="service-item col-sm-12 col-md-6 col-lg-4 shadow-custom  p-0 custom-margin">
                     <div class="services-image " data-place="Gourmet meal and white wine at a restaurant ">
                         <img class="img-fluid " src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80 " alt="food image ">
                     </div>
-                    <h4 class="p-1 text-center mt-2">Food Photography</h4>
+                    <h4 class="service__title p-1 text-center mt-2">Food Photography</h4>
                     <p class="p-1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repudiandae ea nihil.</p>
                 </div>
             </div>
@@ -106,13 +106,36 @@
     </section>
     <!-- end skills -->
 
+    <!-- start gallery -->
+    <section class="gallery padding-top-bottom " id="gallery">
+        <div class="container ">
+            <div class="text-center row mb-5 justify-content-center align-items-center   ">
+                <div class="text__line"></div>
+                <h2 class="section__title  text-center text-uppercase font-weight-bold mb-0">gallery</h2>
+                <div class="text__line"></div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-12 text-center text-uppercase mb-5">
+                    <p class="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quos. Minus neque fuga facere quidem magni, laudantium nulla iusto obcaecati!</p>
+                    <ul class="gallery__list list-inline">
+                        <li class="active gallery__listItem list-inline-item">All</li>
+                        <li class=" gallery__listItem list-inline-item">landscape</li>
+                        <li class=" gallery__listItem list-inline-item">weddings</li>
+                        <li class=" gallery__listItem list-inline-item">food</li>
+                    </ul>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <!-- end gallery -->
 
     <!-- start testimonial  -->
     <section class="testimonial padding-top-bottom">
         <div class="container">
             <div class="text-center row mb-5 justify-content-center align-items-center   ">
                 <div class="text__line"></div>
-                <h2 class="section__title  text-center text-uppercase font-weight-bold mb-0">Customers review</h2>
+                <h2 class="section__title  text-center text-uppercase font-weight-bold mb-0">testimonial</h2>
                 <div class="text__line"></div>
             </div>
             <ul class="testimonial__list">
@@ -123,7 +146,9 @@
                         </div>
                         <h5 class="mt-4">Lorem, ipsum.</h5>
                         <h6>Lorem ipsum dolor sit amet.</h6>
-                        <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint doloribus delectus cupiditate rem atque.</p>
+                        <blockquote>
+                            <p class="testimonial__p pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint doloribus delectus cupiditate rem atque.</p>
+                        </blockquote>
                     </div>
                 </li>
                 <li>
@@ -131,7 +156,9 @@
                         <div class="testimonial__imageH d-sm-inline-block"><img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="lady selfie" height="75px" width="75px"></div>
                         <h5 class="mt-4">Lorem, ipsum.</h5>
                         <h6>Lorem ipsum dolor sit amet.</h6>
-                        <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint doloribus delectus cupiditate rem atque.</p>
+                        <blockquote>
+                            <p class="testimonial__p pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint doloribus delectus cupiditate rem atque.</p>
+                        </blockquote>
                     </div>
                 </li>
                 <li>
@@ -139,7 +166,9 @@
                         <div class="testimonial__imageH d-sm-inline-block mb-3"><img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="lady selfie" height="75px" width="75px"></div>
                         <h5 class="mt-4">Lorem, ipsum.</h5>
                         <h6>Lorem ipsum dolor sit amet.</h6>
-                        <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint doloribus delectus cupiditate rem atque.</p>
+                        <blockquote>
+                            <p class="testimonial__p pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint doloribus delectus cupiditate rem atque.</p>
+                        </blockquote>
                     </div>
                 </li>
                 <li>
@@ -147,14 +176,15 @@
                         <div class="testimonial__imageH d-sm-inline-block "><img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="lady selfie" height="75px" width="75px"></div>
                         <h5 class="mt-4">Lorem, ipsum.</h5>
                         <h6>Lorem ipsum dolor sit amet.</h6>
-                        <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint doloribus delectus cupiditate rem atque.</p>
+                        <blockquote>
+                            <p class=" pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint doloribus delectus cupiditate rem atque.</p>
+                        </blockquote>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
     <!-- end testimonial  -->
-
 
     <!-- start about -->
     <section class="about padding-top-bottom " id="about">
@@ -165,17 +195,17 @@
                 <div class="text__line"></div>
             </div>
             <div class="row ">
-                <div class="col-sm-12 col-lg-3">
-                    <div class="responsive__image-container ">
+                <div class="col-sm-12 col-lg-3 ">
+                    <div class="responsive__image-container">
                         <img class="mb-5" src="images/lady.jpg" alt="lady image">
 
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-9">
                     <h4 class="mb-3 ">Lorem ipsum dolor sit amet consectetur</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt officiis fuga eum nobis, ducimus impedit at voluptatibus quaerat debitis maxime illum vel ad vitae cum odit cupiditate similique dicta vero.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aperiam nesciunt enim dolor laudantium est? Officia libero aspernatur doloribus expedita ad magni blanditiis ratione cum est, fugit, consequuntur ipsa velit.</p>
-                    <a class="btn btn-primary text-capitalize" href="#contact">contact me</a>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt officiis fuga eum nobis, ducimus impedit at voluptatibus quaerat debitis maxime illum vel ad vitae cum odit cupiditate similique dicta vero.</p>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aperiam nesciunt enim dolor laudantium est? Officia libero aspernatur doloribus expedita ad magni blanditiis ratione cum est, fugit, consequuntur ipsa velit.</p>
+                    <a class="btn btn-primary text-capitalize mt-3" href="#contact">contact me</a>
                 </div>
             </div>
         </div>
@@ -197,6 +227,7 @@
         </div>
     </section>
     <!-- end contact us-->
+
     <!-- start footer -->
     <footer class="footer padding-top-bottom ">
         <div class="container ">footer</div>
@@ -233,6 +264,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous ">
     </script>
     <script src="js/main.js "></script>
+</body>
+
+</html>ript src="js/main.js "></script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+*,
 *::before,
 *::after {
     margin: 0;
@@ -25,43 +26,77 @@ body {
 }
 
 .text__line {
-    width: 10%;
+  width: 10%;
     position: relative;
     margin: 0 1rem;
+    background-color: #545b628a;
+    height: 2px;
 }
 
 .text__line::before {
+       content: '';
+    left: 50%;
+    border-top: 2px solid #545b628a;
+    position: absolute;
+    width: 60%;
+    /* top: 50%; */
+    bottom: 4px;
+    transform: translate(-50%, -100%);
+}
+
+.text__line::after {
     content: '';
     left: 50%;
-    border-top: 8px double #545b628a;
+    border-bottom: 4px solid #545b628a;
     position: absolute;
     width: 100%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.text__line::after {
+    content: '';
+    left: 50%;
+    border-bottom: 2px solid #545b628a;
+    position: absolute;
+    width: 60%;
+    top: 4px;
+    transform: translate(-50%, 100%);
 }
 
 .padding-top-bottom {
     padding: 6rem 0;
 }
 
-.section__title__title,
+.section__title,
 .testimonial__title {
     position: relative;
 }
 
+blockquote {
+    position: relative;
+}
 
-/* .services__title::before,
-.testimonial__title::before {
-    content: '';
-    height: 4px;
+blockquote::before,
+blockquote::after {
+    font-size: 5.0rem;
+    line-height: 0.8;
     position: absolute;
-    width: 80%;
-    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+blockquote::before {
+    content: "\275D";
     left: 0;
+    bottom: 50%;
+    transform: translate(0, -90%);
+}
+
+blockquote::after {
+    content: "\275E";
     right: 0;
-    bottom: -8px;
-    background-color: var(--pink);
-} */
+    top: 50%;
+    transform: translate(0, 30%);
+}
 
 
 /* ================================= navbar  =================================  */
@@ -205,6 +240,44 @@ body {
     transition: transform .3s ease;
 }
 
+.service__title {
+    font-size: 1.30rem;
+}
+
+
+/* ================================= gallery section  =================================  */
+
+.gallery__list {
+    text-align: start;
+}
+
+.gallery__listItem {
+    text-align: start;
+    font-weight: bold;
+    transition: color .3s ease;
+}
+
+.gallery__listItem:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.gallery__listItem:not(:last-child)::after {
+    content: '/';
+    display: inline-block;
+    margin-left: .7rem;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.active {
+    color: var(--blue);
+}
+
+
+/* .gallery__listItem:not(:active) {
+    color: #3b3b3b;
+} */
+
 
 /* ================================= testimonial section  =================================  */
 
@@ -316,7 +389,7 @@ body {
 /* ================================= about me section  =================================  */
 
 .responsive__image-container {
-    display: block;
+    display: flex;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -327,18 +400,28 @@ body {
     width: 100%;
     border: 0;
     position: relative;
-    box-shadow: 0px 0px 0px 4px var(--white), 0px 0px 0px 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 0px 4px var(--white), 0px 0px 0px 7px #545b628a
 }
 
 
 /* ================================= start media section  =================================  */
 
 @media (max-width: 576px) {
+    .gallery__list {
+        font-size: .8rem;
+    }
     .testimonial-card {
         width: 80%;
     }
     .section__title {
         font-size: 1.25rem;
+    }
+    blockquote::before,
+    blockquote::after {
+        font-size: 2.5rem;
+    }
+    blockquote::after {
+        top: 95%;
     }
 }
 
@@ -350,9 +433,15 @@ body {
 
 @media (max-width: 768px) {
     .responsive__image-container img {
-        max-width: 60%;
+        max-width: 45%;
         margin: 0 auto;
         text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .section__title {
+        font-size: 1.25rem;
     }
 }
 
@@ -364,6 +453,16 @@ body {
         -ms-flex: 0 0 48.5%;
         flex: 0 0 48.5%;
         max-width: 48.5%;
+    }
+    .gallery__list {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .responsive__image-container img {
+        max-width: 40%;
+        margin: 0 auto;
     }
 }
 
@@ -411,6 +510,9 @@ body {
     }
     .testimonial__list li:nth-child(even) .testimonial-card {
         left: 58%;
+    }
+    blockquote::after {
+        top: 70%;
     }
 }
 
