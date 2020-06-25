@@ -21,8 +21,14 @@ body {
 /* ================================= public classes  =================================  */
 
 .more,
-.testimonial {
+.testimonial,
+.pricing,
+.gallery {
     background-color: #eeeeee;
+}
+
+.section__title {
+    font-family: 'Roboto Mono', monospace;
 }
 
 .text__line {
@@ -34,6 +40,10 @@ body {
     font-weight: normal;
 }
 
+.footer .text__line {
+    background-color: #ffffff8a;
+}
+
 .text__line::before,
 .text__line::after {
     content: '';
@@ -41,6 +51,11 @@ body {
     border-top: 2px solid #545b628a;
     width: 60%;
     left: 50%;
+}
+
+.footer .text__line::before,
+.footer .text__line::after {
+    border-top: 2px solid #ffffff8a;
 }
 
 .text__line::before {
@@ -55,11 +70,6 @@ body {
 
 .padding-top-bottom {
     padding: 6rem 0;
-}
-
-.section__title,
-.testimonial__title {
-    position: relative;
 }
 
 blockquote {
@@ -264,9 +274,25 @@ blockquote::after {
 }
 
 
-/* .gallery__listItem:not(:active) {
-    color: #3b3b3b;
-} */
+/* ================================= pricing section  =================================  */
+
+
+/* ================================= about me section  =================================  */
+
+.responsive__image-container {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.responsive__image-container img {
+    border-radius: 100%;
+    width: 100%;
+    border: 0;
+    position: relative;
+    box-shadow: 0px 0px 0px 4px var(--white), 0px 0px 0px 7px #545b628a
+}
 
 
 /* ================================= testimonial section  =================================  */
@@ -376,21 +402,66 @@ blockquote::after {
 }
 
 
-/* ================================= about me section  =================================  */
+/* ================================= footer section  =================================  */
 
-.responsive__image-container {
-    display: flex;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
+.footer {
+    background-color: #222831;
+    color: #cdcdcd;
 }
 
-.responsive__image-container img {
-    border-radius: 100%;
-    width: 100%;
-    border: 0;
+.footer__header {
+    font-size: 800;
+    color: white;
+}
+
+.footer__p {
+    font-weight: 300;
+}
+
+.footer_social li {
+    margin: .5rem 0.5rem 0.5rem 0;
+    display: inline-block;
+    padding-left: 0;
+}
+
+.footer_social a {
+    color: #cdcdcd;
+}
+
+.footer_social li {
     position: relative;
-    box-shadow: 0px 0px 0px 4px var(--white), 0px 0px 0px 7px #545b628a
+    transition: bottom .3s ease-in-out;
+    bottom: 0;
+    display: inline-flex;
+}
+
+.footer_social .icons {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: #f5f5f5;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+}
+
+.footer_social li:hover {
+    bottom: 6px;
+    opacity: .7;
+    transition: bottom .3s ease-in-out;
+}
+
+
+/* ================================= copyright section =================================  */
+
+.copyright {
+    background-color: #212124;
+    color: #cdcdcd;
+}
+
+.copyright .container p.lead {
+    margin-bottom: 0;
 }
 
 
@@ -412,6 +483,10 @@ blockquote::after {
     }
     blockquote::after {
         top: 95%;
+    }
+    .footer_social .icons {
+        width: 25px;
+        height: 25px;
     }
 }
 

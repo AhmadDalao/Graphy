@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- main style -->
     <link rel="stylesheet" href="css/style.css">
+    <!--adding fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto+Mono:wght@423;700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Sacramento&display=swap" rel="stylesheet" />
     <!-- Place your kit's  "font-awesome" to use the icons -->
     <script src="https://kit.fontawesome.com/5a0dddbca3.js" crossorigin="anonymous"></script>
     <title>Graphy</title>
@@ -28,8 +32,8 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="navbar-item text-capitalize"> <a href="#services" class=" fill__link" data-text="Services">services</a> </li>
                         <li class="navbar-item text-capitalize"> <a href="#about" class=" fill__link" data-text="About">About</a> </li>
-                        <li class="navbar-item text-capitalize"> <a href="#contact" class=" fill__link" data-text="Contact">Contact</a>
-                        </li>
+                        <li class="navbar-item text-capitalize"> <a href="#pricing" class=" fill__link" data-text="pricing">pricing</a> </li>
+                        <li class="navbar-item text-capitalize"> <a href="#contact" class=" fill__link" data-text="Contact">Contact</a> </li>
                     </ul>
                 </div>
             </div>
@@ -130,8 +134,46 @@
     </section>
     <!-- end gallery -->
 
+    <!-- start pricing -->
+    <section class="pricing padding-top-bottom " id="pricing">
+        <div class="container ">
+
+            <div class="row ">
+                <div>pricing</div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <!-- end pricing -->
+
+    <!-- start about -->
+    <section class="about padding-top-bottom " id="about">
+        <div class="container ">
+            <div class="text-center row mb-5 justify-content-center align-items-center   ">
+                <div class="text__line"></div>
+                <h2 class="section__title  text-center text-uppercase font-weight-bold mb-0">About me</h2>
+                <div class="text__line"></div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-12 col-lg-3 ">
+                    <div class="responsive__image-container">
+                        <img class="mb-5" src="images/lady.jpg" alt="lady image">
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-9">
+                    <h4 class="mb-3 ">Lorem ipsum dolor sit amet consectetur</h4>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt officiis fuga eum nobis, ducimus impedit at voluptatibus quaerat debitis maxime illum vel ad vitae cum odit cupiditate similique dicta vero.</p>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aperiam nesciunt enim dolor laudantium est? Officia libero aspernatur doloribus expedita ad magni blanditiis ratione cum est, fugit, consequuntur ipsa velit.</p>
+                    <a class="btn btn-primary text-capitalize mt-3" href="#contact">contact me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start about -->
+
     <!-- start testimonial  -->
-    <section class="testimonial padding-top-bottom">
+    <section class="testimonial padding-top-bottom" id="testimonial">
         <div class="container">
             <div class="text-center row mb-5 justify-content-center align-items-center   ">
                 <div class="text__line"></div>
@@ -186,76 +228,47 @@
     </section>
     <!-- end testimonial  -->
 
-    <!-- start about -->
-    <section class="about padding-top-bottom " id="about">
-        <div class="container ">
-            <div class="text-center row mb-5 justify-content-center align-items-center   ">
-                <div class="text__line"></div>
-                <h2 class="section__title  text-center text-uppercase font-weight-bold mb-0">About me</h2>
-                <div class="text__line"></div>
-            </div>
-            <div class="row ">
-                <div class="col-sm-12 col-lg-3 ">
-                    <div class="responsive__image-container">
-                        <img class="mb-5" src="images/lady.jpg" alt="lady image">
-
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-9">
-                    <h4 class="mb-3 ">Lorem ipsum dolor sit amet consectetur</h4>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt officiis fuga eum nobis, ducimus impedit at voluptatibus quaerat debitis maxime illum vel ad vitae cum odit cupiditate similique dicta vero.</p>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aperiam nesciunt enim dolor laudantium est? Officia libero aspernatur doloribus expedita ad magni blanditiis ratione cum est, fugit, consequuntur ipsa velit.</p>
-                    <a class="btn btn-primary text-capitalize mt-3" href="#contact">contact me</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- start about -->
-
-    <!-- start contact us-->
-    <section class="contact padding-top-bottom " id="contact">
-        <div class="container ">
-            <div class="text-center row mb-5 justify-content-center align-items-center   ">
-                <div class="text__line"></div>
-                <h2 class="section__title  text-center text-uppercase font-weight-bold mb-0">Contact me</h2>
-                <div class="text__line"></div>
-            </div>
-            <div class="row ">
-                <div>contact</div>
-                <div></div>
-            </div>
-        </div>
-    </section>
-    <!-- end contact us-->
-
     <!-- start footer -->
-    <footer class="footer padding-top-bottom ">
-        <div class="container ">footer</div>
+    <footer class="footer padding-top-bottom " id="contact">
+        <div class="container ">
+            <div class="text-center row mb-5 justify-content-center align-items-center   ">
+                <div class="text__line footer__header"></div>
+                <h2 class="section__title  text-center text-uppercase font-weight-bold mb-0 footer__header">Contact</h2>
+                <div class="text__line footer__header"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <h3 class="text-uppercase h3 footer__header">Follow me on</h3>
+                    <ul class=" footer_social mt-3 mb-4">
+                        <li><a class="p-2" style="background-color: #c53942;" href="#"><i class="fab fa-pinterest icons"></i></a></li>
+                        <li><a class="p-2" style="background-color: #3393c1;" href="#"><i class="fab fa-linkedin-in icons"></i></a> </li>
+                        <li><a class="p-2" style="background-color: #4470cf;" href="#"><i class="fab fa-facebook-f icons"></i></a></li>
+                        <li><a class="p-2" style="background-color: #e86f04;" href="#"><i class="fas fa-rss icons"></i></a> </li>
+                        <li><a class="p-2" style="background-color: #5daed5;" href="#"><i class="fab fa-twitter icons"></i></a> </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <h3 class="text-uppercase h3 footer__header">get in touch</h3>
+                    <p class="footer__p mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia reiciendis cupiditate optio inventore sit enim.</p>
+                    <ul class="list-unstyled">
+                        <li class="footer__p mt-2"><i class="fas fa-map-marked-alt mr-2"></i>7278 Grand Ave. Staten Island, NY 10314</li>
+                        <li class="footer__p mt-2"><i class="fas fa-phone mr-2"></i>847-864-6978</li>
+                        <li class="footer__p mt-2"><i class="fas fa-envelope mr-2"></i>firstName@email.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- end footer -->
 
-    <section>
-        <div class="container ">
-            <div class="row ">
-                <div class="col-sm-12 ">
-                    <div class="row ">
-                        <div class="col-sm-12 col-md-3 col-lg-4 ">
-                            <img class="img-fluid mx-auto " src="images/jerry-zhang-3ABIkpIS8Ec-unsplash.jpg " title="photographer" alt="selfie for the photographer">
-                        </div>
-                        <div class="col-sm-12 col-md-9 col-lg-8 ">
-                            <h1>This is a great place to visit</h1>
-                            <p class="lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut voluptas eveniet distinctio dolores voluptates velit ratione a iure consequatur, sint suscipit illo excepturi expedita veniam debitis in itaque modi?</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-sm-6 ">6</div>
-                <div class="col-sm-6 ">6</div>
-                <div class="col-sm-12 ">12</div>
-
-            </div>
+    <!-- start copyright -->
+    <section class="copyright text-center py-3" id="copyright">
+        <div class="container">
+            <p class="lead ">Designed and built by Ahmad Dalao © 2020 . All rights reserved.</p>
         </div>
     </section>
+    <!-- end copyright -->
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous ">
     </script>
@@ -264,9 +277,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous ">
     </script>
     <script src="js/main.js "></script>
-</body>
-
-</html>ript src="js/main.js "></script>
 </body>
 
 </html>
