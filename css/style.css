@@ -98,6 +98,26 @@ blockquote::after {
     transform: translate(0, 30%);
 }
 
+.custom-btn {
+    padding: 1rem 2rem;
+    font-weight: 700;
+    color: #212124;
+    text-decoration: none;
+    border: 1px solid #545b62;
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    transition: background-color 0.3s ease, color .3s ease, bottom .3s ease;
+}
+
+.custom-btn:hover {
+    background-color: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--blue);
+    bottom: 5px;
+}
+
 
 /* ================================= navbar  =================================  */
 
@@ -195,10 +215,6 @@ blockquote::after {
 
 /* ================================= services section  =================================  */
 
-.custom-margin {
-    margin: 0.25rem 0.2rem 0 0.25rem;
-}
-
 .shadow-custom {
     box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.17);
 }
@@ -241,7 +257,7 @@ blockquote::after {
 }
 
 .service__title {
-    font-size: 1.30rem;
+    font-size: 1.25rem;
 }
 
 
@@ -276,6 +292,31 @@ blockquote::after {
 
 /* ================================= pricing section  =================================  */
 
+.pricing .box {
+    position: relative;
+    z-index: 1;
+}
+
+.pricing .box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(315deg, #007bff, #007bff);
+    background: -webkit-linear-gradient(315deg, #007bff, #ff2ea8);
+    z-index: -1;
+    transform: skew(1deg, 1deg);
+}
+
+.pricing .card {
+    position: relative;
+    background: white;
+    border: none;
+    border-radius: 0;
+}
+
 .card-title {
     position: relative;
     font-weight: 700;
@@ -283,6 +324,7 @@ blockquote::after {
 
 .price {
     font-weight: 800;
+    position: relative;
 }
 
 .card-title::after,
@@ -324,7 +366,7 @@ ul.card__list li:not(:last-child)::after {
 }
 
 .card__list li span {
-    padding-left: 0.4rem;
+    padding-left: 0.5rem;
 }
 
 
@@ -565,11 +607,6 @@ ul.card__list li:not(:last-child)::after {
     html {
         /* font-size: 1.5rem; */
     }
-    .service__item.col-md-6 {
-        -ms-flex: 0 0 48.5%;
-        flex: 0 0 48.5%;
-        max-width: 48.5%;
-    }
     .gallery__list {
         text-align: center;
     }
@@ -609,19 +646,11 @@ ul.card__list li:not(:last-child)::after {
     .card:not(:nth-last-child(3)) {
         margin-bottom: 1.2rem !important;
     }
-    .service__item:not(:nth-last-child(1)) {
-        margin: 0.25rem 0.2rem 1.2rem 0.25rem;
-    }
 }
 
 @media (min-width: 992px) {
     html {
         /* font-size: 1.75rem; */
-    }
-    .service__item.col-lg-4 {
-        -ms-flex: 0 0 31.833333%;
-        flex: 0 0 31.833333%;
-        max-width: 31.833333%;
     }
     .testimonial__list::before {
         left: 50%;
