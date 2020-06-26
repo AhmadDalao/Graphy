@@ -28,3 +28,13 @@ myNav.addEventListener('mouseout', function() {
 
     }
 });
+
+
+$(function() {
+    $(".filter").click(function() {
+        $($(this).data('filter')).fadeIn(500);
+        $('.gallery-holder').find('div').not($(this).data('filter')).fadeOut(1000);
+        console.log($(this).data('filter'));
+
+    });
+});

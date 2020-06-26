@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Sacramento&display=swap" rel="stylesheet" />
     <!-- Place your kit's  "font-awesome" to use the icons -->
     <script src="https://kit.fontawesome.com/5a0dddbca3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Graphy</title>
 </head>
 
@@ -126,18 +128,69 @@
                 <div class="text__line"></div>
             </div>
             <div class="row ">
-                <div class="col-sm-12 text-center text-uppercase mb-5">
+                <div class="col-sm-12 col-md-12 col-lg-12 text-center text-uppercase mb-5">
                     <p class="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quos. Minus neque fuga facere quidem magni, laudantium nulla iusto obcaecati!</p>
                     <ul class="gallery__list list-inline">
-                        <li class="active gallery__listItem list-inline-item">All</li>
-                        <li class=" gallery__listItem list-inline-item">landscape</li>
-                        <li class=" gallery__listItem list-inline-item">weddings</li>
-                        <li class=" gallery__listItem list-inline-item">food</li>
+                        <li class=" gallery__listItem list-inline-item filter" data-filter=".all">All</li>
+                        <li class=" gallery__listItem list-inline-item filter" data-filter=".landscape">landscape</li>
+                        <li class=" gallery__listItem list-inline-item filter" data-filter=".weddings">weddings</li>
+                        <li class=" gallery__listItem list-inline-item filter" data-filter=".food">food</li>
                     </ul>
                 </div>
-                <div></div>
+            </div>
+
+            <div class="container row  justify-content-center mx-auto p-0">
+                <div class="d-flex flex-row flex-wrap justify-content-center gallery-holder" id="gallery-holder">
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-0 all weddings">
+                        <img class="img-fluid  custom__size" src="https://images.unsplash.com/photo-1553102674-af685bb5fe40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt=" weddings image ">
+                        <p class="gallery__text" data-image="wedding 1 ">wedding 1</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-0 all food">
+                        <img class="img-fluid  custom__size" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="food image">
+                        <p class="gallery__text" data-image="food 1 ">food 1</p>
+                    </div>
+
+                    <div class=" col-sm-12 col-md-6 col-lg-4 p-0 all landscape ">
+                        <img class="img-fluid custom__size " src="https://images.unsplash.com/photo-1434397940728-5e4513152691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80 " alt="landscape image ">
+                        <p class="gallery__text" data-image="landscape 1 ">landscape 1</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-0 all food">
+                        <img class="img-fluid  custom__size" src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="food image">
+                        <p class="gallery__text" data-image="food 2 ">food 2</p>
+                    </div>
+
+                    <div class=" col-sm-12 col-md-6 col-lg-4 p-0 all weddings ">
+                        <img class="img-fluid custom__size " src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80 " alt="weddings image ">
+                        <p class="gallery__text" data-image="wedding 2 ">wedding 2</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-0 all landscape ">
+                        <img class="img-fluid custom__size " src="https://images.unsplash.com/photo-1502786129293-79981df4e689?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80 " alt="landscape image ">
+                        <p class="gallery__text" data-image="landscape 2 "> landscape 2</p>
+                    </div>
+
+                    <div class=" col-sm-12 col-md-6 col-lg-4 p-0 all landscape ">
+                        <img class="img-fluid custom__size " src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80 " alt="landscape image ">
+                        <p class="gallery__text" data-image="landscape 3 "> landscape 3</p>
+                    </div>
+
+                    <div class=" col-sm-12 col-md-6 col-lg-4 p-0 all food ">
+                        <img class="img-fluid custom__size " src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80 " alt="food image ">
+                        <p class="gallery__text" data-image="food 3 "> food 3</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-0 all weddings">
+                        <img class="img-fluid  custom__size" src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80" alt="weddings image">
+                        <p class="gallery__text" data-image="wedding 3 "> wedding 3</p>
+                    </div>
+
+                </div>
             </div>
         </div>
+
     </section>
     <!-- end gallery -->
 
@@ -303,11 +356,13 @@
                 <div class="col-sm-12 col-lg-6">
                     <h3 class="text-uppercase h3 footer__header">Follow me on</h3>
                     <ul class=" footer_social mt-3 mb-4">
-                        <li><a class="p-2" style="background-color: #c53942;" href="#"><i class="fab fa-pinterest icons"></i></a></li>
-                        <li><a class="p-2" style="background-color: #3393c1;" href="#"><i class="fab fa-linkedin-in icons"></i></a> </li>
-                        <li><a class="p-2" style="background-color: #4470cf;" href="#"><i class="fab fa-facebook-f icons"></i></a></li>
-                        <li><a class="p-2" style="background-color: #e86f04;" href="#"><i class="fas fa-rss icons"></i></a> </li>
-                        <li><a class="p-2" style="background-color: #5daed5;" href="#"><i class="fab fa-twitter icons"></i></a> </li>
+                        <li><a title="pinterestq" class="p-2" style="background-color: #c53942;" href="#"><i class="fab fa-pinterest icons"></i></a></li>
+                        <li><a title="linknedin" class="p-2" style="background-color: #3393c1;" href="#"><i class="fab fa-linkedin-in icons"></i></a> </li>
+                        <li><a title="facebook" class="p-2" style="background-color: #4470cf;" href="#"><i class="fab fa-facebook-f icons"></i></a></li>
+                        <li><a title="rss" class="p-2" style="background-color: #e86f04;" href="#"><i class="fas fa-rss icons"></i></a> </li>
+                        <li><a title="twitter" class="p-2" style="background-color: #5daed5;" href="#"><i class="fab fa-twitter icons"></i></a> </li>
+                        <li><a title="instagram" class="p-2" style="background-color: #3f729b;" href="#"><i class="fab fa-instagram icons"></i></a> </li>
+
                     </ul>
                 </div>
                 <div class="col-sm-12 col-lg-6">
@@ -333,8 +388,9 @@
     <!-- end copyright -->
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous ">
-    </script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous ">
+    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous ">
