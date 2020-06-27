@@ -15,7 +15,6 @@ html {
 
 body {
     color: var(--gray-dark);
-    overflow-x: hidden;
 }
 
 
@@ -121,10 +120,6 @@ blockquote::after {
 
 
 /* ================================= navbar  =================================  */
-
-.fixed-top {
-    transform: translate(0, 0, 0);
-}
 
 .navbar {
     transition: background 0.4s ease;
