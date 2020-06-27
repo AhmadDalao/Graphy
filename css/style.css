@@ -146,19 +146,24 @@ blockquote::after {
     opacity: 1;
 }
 
-.navbar .fill__link::before {
+.navbar .custom__link {
+    position: relative;
+}
+
+.navbar .custom__link::before {
     position: absolute;
     white-space: nowrap;
     display: block;
     width: 100%;
-    bottom: 0;
+    left: 0;
+    bottom: -5px;
     transform: scale(0, 1);
-    padding-bottom: 0.2rem;
+    padding-bottom: 5px;
     content: "";
     transition: width .3s ease, transform .3s ease;
 }
 
-.navbar .fill__link:hover::before {
+.navbar .fill__link:hover .custom__link::before {
     border-bottom: 2px solid var(--pink);
     transform: scale(1, 1);
 }
@@ -632,6 +637,10 @@ ul.card__list li:not(:last-child)::after {
 /* ================================= start media section  =================================  */
 
 @media (max-width: 576px) {
+    .navbar .fill__link {
+        text-align: center;
+        display: block;
+    }
     .gallery__list {
         font-size: .8rem;
     }
@@ -660,6 +669,12 @@ ul.card__list li:not(:last-child)::after {
 @media (min-width: 576px) {
     html {
         font-size: 1.25rem;
+    }
+    .navbar .custom__link::before {
+        bottom: -6px;
+    }
+    .navbar .fill__link {
+        padding: 0;
     }
 }
 
