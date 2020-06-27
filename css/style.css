@@ -652,6 +652,9 @@ ul.card__list li:not(:last-child)::after {
         width: 25px;
         height: 25px;
     }
+    .card__list {
+        min-width: 280px;
+    }
 }
 
 @media (min-width: 576px) {
