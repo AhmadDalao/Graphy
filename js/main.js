@@ -1,16 +1,6 @@
 /* if scrolling add the background color to the navbar */
 let myNav = document.querySelector('#myNav');
 
-// window.onscroll = function() {
-//     "use strict";
-//     if (document.body.scrollTop >= 350 || document.documentElement.scrollTop >= 350) {
-//         myNav.classList.add("bg-custom");
-//         myNav.classList.remove("bg-transparent");
-//     } else {
-//         myNav.classList.add("bg-transparent");
-//         myNav.classList.remove("bg-custom");
-//     }
-// };
 
 // scroll functions
 $(window).scroll(function(e) {
@@ -53,7 +43,3 @@ $(function() {
 
     });
 });
-
-
-// All animations will take twice the time to accomplish
-// document.documentElement.style.setProperty('--animate-duration', '2s');
