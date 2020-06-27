@@ -411,7 +411,14 @@
     <!-- wow js -->
     <script src="js/wow.js"></script>
     <script>
-        new WOW().init();
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true,
+            live: true // default
+        })
+        wow.init();
     </script>
     <script src="js/main.js"></script>
 </body>
