@@ -13,19 +13,19 @@ let myNav = document.querySelector('#myNav');
 // };
 
 // scroll functions
-// $(window).scroll(function(e) {
+$(window).scroll(function(e) {
 
-//     // add/remove class to navbar when scrolling to hide/show
-//     var scroll = $(window).scrollTop();
-//     if (scroll >= 350) {
-//         $('#myNav').removeClass('bg-transparent');
-//         $('#myNav').addClass("bg-custom");
-//     } else {
-//         $('#myNav').addClass('bg-transparent');
-//         $('#myNav').removeClass("bg-custom");
-//     }
+    // add/remove class to navbar when scrolling to hide/show
+    var scroll = $(window).scrollTop();
+    if (scroll >= 350) {
+        $('#myNav').removeClass('bg-transparent');
+        $('#myNav').addClass("bg-custom");
+    } else {
+        $('#myNav').addClass('bg-transparent');
+        $('#myNav').removeClass("bg-custom");
+    }
 
-// });
+});
 
 /* if the screen height is below 550 and you hover over the bar icon the navbar will get background if it was transparent */
 myNav.addEventListener('mousemove', function() {
