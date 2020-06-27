@@ -15,6 +15,7 @@ html {
 
 body {
     color: var(--gray-dark);
+    overflow-x: hidden;
 }
 
 
