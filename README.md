@@ -4,3 +4,9 @@
 
 
 ### [Live Demo]: https://graphy.netlify.app/
+
+
+<br><br><br>
+<br>
+    <img src="https://raw.githubusercontent.com/AhmadDalao/Graphy/master/images/graphy.png"  width="700"/>
+<br>
