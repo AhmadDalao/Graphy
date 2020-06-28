@@ -123,6 +123,7 @@ blockquote::after {
 
 .navbar {
     transition: background 0.4s ease;
+    /* display: block !important; */
 }
 
 .navbar.bg-custom {
