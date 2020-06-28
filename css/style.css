@@ -130,11 +130,6 @@ blockquote::after {
     background: #222831;
 }
 
-.navbar .navbar-item {
-    margin: 0.5rem .75rem;
-    padding: 0.5rem 0;
-}
-
 .navbar .fill__link {
     position: relative;
     color: var(--white);
