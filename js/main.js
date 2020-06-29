@@ -34,12 +34,16 @@ myNav.addEventListener('mouseout', function() {
     }
 });
 
+// gallery filter 
 
 $(function() {
     $(".filter").click(function() {
+        $(this).addClass('custom__active').siblings().removeClass('active');
         $($(this).data('filter')).fadeIn(500);
         $('.gallery-holder').find('div').not($(this).data('filter')).fadeOut(1000);
         console.log($(this).data('filter'));
 
     });
 });
+
+// carousel filter

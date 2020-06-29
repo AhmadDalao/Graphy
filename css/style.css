@@ -287,7 +287,7 @@ blockquote::after {
     color: rgba(0, 0, 0, 0.2);
 }
 
-.active {
+.custom__active {
     color: var(--blue);
 }
 
@@ -458,6 +458,13 @@ ul.card__list li:not(:last-child)::after {
     border: 0;
     position: relative;
     box-shadow: 0px 0px 0px 4px var(--white), 0px 0px 0px 7px #545b628a
+}
+
+
+/* ================================= carousel section  =================================  */
+
+.item-image {
+    height: 235px;
 }
 
 
