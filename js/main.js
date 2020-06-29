@@ -38,7 +38,7 @@ myNav.addEventListener('mouseout', function() {
 
 $(function() {
     $(".filter").click(function() {
-        $(this).addClass('custom__active').siblings().removeClass('active');
+        $(this).addClass('custom__active').siblings().removeClass('custom__active');
         $($(this).data('filter')).fadeIn(500);
         $('.gallery-holder').find('div').not($(this).data('filter')).fadeOut(1000);
         console.log($(this).data('filter'));
