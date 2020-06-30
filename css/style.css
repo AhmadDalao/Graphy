@@ -304,9 +304,11 @@ blockquote::after {
     z-index: 1;
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
     background: rgba(40, 184, 216, 0.8);
+    visibility: visible;
 }
 
 .all p {
+    visibility: hidden;
     position: absolute;
     display: flex;
     color: white;
