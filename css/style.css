@@ -771,9 +771,6 @@ ul.card__list li:not(:last-child)::after {
 }
 
 @media (min-width: 768px) {
-    html {
-        /* font-size: 1.5rem; */
-    }
     .gallery__list {
         text-align: center;
     }
@@ -816,9 +813,6 @@ ul.card__list li:not(:last-child)::after {
 }
 
 @media (min-width: 992px) {
-    html {
-        /* font-size: 1.75rem; */
-    }
     .testimonial__list::before {
         left: 50%;
         transform: translateX(-50%);
@@ -834,11 +828,5 @@ ul.card__list li:not(:last-child)::after {
     }
     blockquote::after {
         top: 70%;
-    }
-}
-
-@media (min-width: 1200px) {
-    html {
-        /* font-size: 2rem; */
     }
 }
