@@ -50,7 +50,7 @@ $(function() {
 // loading screen
 
 $(window).on("load", function() {
-    $(".loading__title , .spinner-container").fadeOut(99999);
+    $(".loading__title , .spinner-container").fadeOut(2500);
     $(".loading-screen").fadeOut(400, function() {
         $("body").css("overflow", "auto");
         $(this).remove();
